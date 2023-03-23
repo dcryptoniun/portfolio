@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
+import Photo from "../public/Images/IMG.png"
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
         <div className="p-5  bg-blurrybg backdrop-blur-3xl border max-w-md flex flex-col justify-center items-center text-center font-mono rounded-xl ">
           <Image
             className="rounded-3xl"
-            src="/Images/img.png"
-            alt="image"
+            src={Photo}
+            alt="photo"
             width={100}
             height={100}
           />
