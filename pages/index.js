@@ -14,9 +14,9 @@ export default function Home() {
       <main className=" bg-slate-100 dark:bg-slate-900 duration-1000  flex justify-center items-center w-full h-screen">
         <div className="p-5  bg-blurrybg backdrop-blur-3xl border max-w-md flex flex-col justify-center items-center text-center font-mono rounded-xl ">
           <Image
-            className="rounded-full"
+            className="rounded-3xl"
             src="/Images/img.jpg"
-            alt="img"
+            alt="image"
             width={100}
             height={100}
           />
