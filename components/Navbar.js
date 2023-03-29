@@ -1,11 +1,13 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Links from "./Links";
 import ThemeSwitch from "./ThemeSwitch";
 
 function Navbar() {
   return (
-    <div className="  duration-1000 bg-red-500/20 fixed z-10 dark:bg-yellow-500/50 backdrop-blur-3xl w-full p-5 h-12 flex justify-between items-center ">
-      <div className=" relative">
+    <div className="fixed duration-1000 bg-transparent  w-full p-5 h-12 flex justify-between items-center ">
+      <div className=" relative bg-black/20 dark:bg-white/20 p-2 px-3 rounded-xl backdrop-blur-3xl shadow-md shadow-black/20 dark:shadow-white/20">
         <Link href="/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -18,10 +20,11 @@ function Navbar() {
           </svg>
         </Link>
       </div>
-      <div className=" relative flex flex-row">
-        
-      <ThemeSwitch />
-      </div>  
+      <div className=" relative flex flex-row  bg-black/20 dark:bg-white/20  px-3 rounded-xl backdrop-blur-3xl shadow-md shadow-black/20 dark:shadow-white/20">
+        <Links />
+
+        <ThemeSwitch />
+      </div>
     </div>
   );
 }
