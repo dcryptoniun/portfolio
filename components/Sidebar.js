@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import Links from "./Links";
-import Photo from "../public/Images/photo.jpg";
+
 
 
 function Sidebar() {
@@ -13,7 +13,9 @@ function Sidebar() {
           <div className=" shadow-2xl border-b-4 border-t-2 border-primary p-16 rounded-xl backdrop-blur text-center space-y-2">
             <Image
               className="rounded-full w-[200px] h-[200px] shadow-2xl border"
-              src={Photo}
+              src="/Images/photo.jpg"
+              width={200}
+              height={200}
               alt="photo"
             />
             <h1 className=" font-bold text-2xl">Mayank Meena</h1>

@@ -1,5 +1,5 @@
 import Link from "next/link";
-// import { TextLoop } from "react-text-loop-next";
+ import { TextLoop } from "react-text-loop-next";
 import { toast } from "react-toastify";
 
 
@@ -14,14 +14,11 @@ const HeroSection = () => {
       <div className="flex items-center justify-center  min-h-screen ">
         <div className="m-3 p-2">
           <h1 className="text-5xl font-bold">Mayank Meena</h1>
-          {/* <TextLoop
-  children={[
-    "Trade faster",
-    "Increase sales",
-    "Stock winners",
-    "Price perfectly",
-  ]}
-/> */}
+          <TextLoop>
+        <span>Trade</span>
+        <span>Increase</span>
+        <span>Stock</span>
+      </TextLoop>
           <p className="py-6">
             Welcome to my portfolio website! My name is Mayank Meena, and I am a
             freelance developer specializing in blockchain, smart contract, NFT,
