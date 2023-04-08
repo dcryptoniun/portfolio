@@ -14,11 +14,15 @@ const HeroSection = () => {
       <div className="flex items-center justify-center  min-h-screen ">
         <div className="m-3 p-2">
           <h1 className="text-5xl font-bold">Mayank Meena</h1>
-          <TextLoop>
-        <span>Trade</span>
-        <span>Increase</span>
-        <span>Stock</span>
-      </TextLoop>
+          <h2 className="text-lg gap-1 font-semibold p-1">
+          <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
+        <span>Blockchain</span>
+        <span>Smart Contract</span>
+        <span>NFTs</span>
+        <span>Token</span>
+        <span>Dapps</span>
+        <span>Website</span>
+      </TextLoop> Development</h2>
           <p className="py-6">
             Welcome to my portfolio website! My name is Mayank Meena, and I am a
             freelance developer specializing in blockchain, smart contract, NFT,
