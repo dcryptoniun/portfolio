@@ -1,14 +1,16 @@
-import Footer from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import Layout from "@/components/Layout";
+
 import "@/styles/globals.css";
 import { ThemeProvider } from "next-themes";
 
 export default function App({ Component, pageProps }) {
-  return<>
-  <ThemeProvider attribute="class">
-  <Navbar/>
-  <Component {...pageProps} />
-  {/* <Footer/> */}
-  </ThemeProvider>
-  </> 
+  return (
+    <>
+      <ThemeProvider data-theme="class">
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </ThemeProvider>
+    </>
+  );
 }
