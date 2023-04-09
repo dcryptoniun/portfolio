@@ -34,9 +34,9 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            {/* <li><Link className=" hover:text-accent" href="/#services">
+            <li><Link className=" hover:text-accent" href="/#services">
             Services
-          </Link></li> */}
+          </Link></li>
             <li>
               <Link className=" hover:text-accent" href="/#contact">
                 Contact
@@ -56,7 +56,7 @@ function Navbar() {
           </ul>
         </div>
         <Link href="/" className="btn">
-          <Image src="/images/mlogo.svg" alt="Logo" width={25} height={25} />
+          <Image src="/images/mlogo.png" alt="Logo" width={25} height={25} />
         </Link>
       </div>
       <div className="navbar-center hidden md:flex">
@@ -66,9 +66,9 @@ function Navbar() {
               Home
             </Link>
           </li>
-          {/* <li><Link className=" hover:text-accent" href="/#services">
+          <li><Link className=" hover:text-accent" href="/#services">
             Services
-          </Link></li> */}
+          </Link></li>
           <li>
             <Link className=" hover:text-accent" href="/#contact">
               Contact

@@ -22,7 +22,7 @@ export default function Layout({ children }) {
         pauseOnHover
         theme="dark"
       />
-        <div className="   h-screen md:w-1/3 w-full m-3 ">
+        <div className="   h-screen md:w-1/3 w-full  ">
          < Sidebar/>
         </div>
         <div className=" h-screen  md:w-2/3">{children}</div>

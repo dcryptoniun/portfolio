@@ -1,12 +1,26 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
+
+
 const ContactUs = () => {
   const form = useRef();
+  const [isSending, setIsSending] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    // check if any field is empty
+    const { elements } = form.current;
+    for (let i = 0; i < elements.length; i++) {
+      if (!elements[i].value) {
+        toast.error(`🤖 ${elements[i].name} field is required`);
+        return;
+      }
+    }
+
+    setIsSending(true);
 
     emailjs
       .sendForm(
@@ -17,22 +31,24 @@ const ContactUs = () => {
       )
       .then(
         (result) => {
-          toast("🤖 Message send, thanks for reaching out....");
+          toast.success("🤖 Message sent, thanks for reaching out!");
           console.log(result.text);
+          setIsSending(false);
         },
         (error) => {
-          toast("🤖 error, Please try again....");
+          toast.error("🤖 Error, please try again.");
           console.log(error);
+          setIsSending(false);
         }
       );
   };
 
   return (
-    <div className=" flex flex-col justify-center items-center min-h-screen">
+    <div className="flex flex-col justify-center items-center min-h-screen">
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="max-w-lg   flex flex-col"
+        className="max-w-lg flex flex-col"
       >
         <label className="py-1 my-1">Name</label>
 
@@ -61,15 +77,14 @@ const ContactUs = () => {
         <br />
         <input
           type="submit"
-          value="Send"
-          className=" font-bold uppercase bg-transperent py-2 px-4 w-full   text-yellow-300 hover:bg-black/25 hover:text-emerald-300 outline rounded transition-all duration-150 active:bg-slate-800 shadow-xl "
+          value={isSending ? "Sending..." : "Send"}
+          className="font-bold uppercase bg-transperent py-2 px-4 w-full text-primary hover:bg-secondary/10 hover:text-accent outline rounded transition-all duration-150 active:bg-primary shadow-xl"
+          disabled={isSending}
         />
       </form>
       <p className="py-1 my-1 shadow">
-        {" "}
         or write us at dcryptoniun+folio@gmail.com
       </p>
-     
     </div>
   );
 };
