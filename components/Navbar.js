@@ -56,7 +56,7 @@ function Navbar() {
           </ul>
         </div>
         <Link href="/" className="btn">
-          <Image src="/images/mlogo.png" alt="Logo" width={25} height={25} />
+          <Image src="/Images/mlogo.png" alt="Logo" width={25} height={25} />
         </Link>
       </div>
       <div className="navbar-center hidden md:flex">
