@@ -3,34 +3,32 @@ import Image from "next/image";
 import Link from "next/link";
 import Links from "./Links";
 
-
-
 function Sidebar() {
   return (
-    <div className=" flex md:fixed  md:justify-start justify-center items-center pt-24 md:pt-0 md:w-fit  h-screen m-2">
+    <div className="flex items-center justify-center h-screen pt-24 m-2 md:fixed md:justify-start md:pt-0 md:w-fit">
       <div>
-        
-          <div className=" shadow-2xl border-b-4 border-t-2 border-primary p-16 rounded-xl backdrop-blur text-center space-y-2">
-            <Image
-              className="rounded-full w-[200px] h-[200px] shadow-2xl border"
-              src="/Images/photo.jpg"
-              width={200}
-              height={200}
-              alt="photo"
-            />
-            <h1 className=" font-bold text-2xl">Mayank Meena</h1>
-            <p className="font-bold text-xl">Freelancer</p>
-            <Link
-              className="text-red-600 font-bold text-xl hover:text-red-400"
-              href="https://www.fiverr.com/mayankmeena"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              hire me!
-            </Link>
-            <Links />
-          </div>
-        
+        <div className="relative p-16 space-y-2 text-center border-t-2 border-b-4 shadow-2xl border-primary rounded-xl backdrop-blur overflow-clip hover:scale-105">
+          <div className="absolute rounded-full animate-pulse bg-secondary/10 w-52 h-52 -top-32 -right-32 blur-md "></div>
+          <div className="absolute rounded-full bg-accent/10 w-52 h-52 -bottom-32 -left-32 blur-md animate-pulse"></div>
+          <Image
+            className="rounded-full w-[200px] h-[200px] shadow-2xl border"
+            src="/Images/photo.jpg"
+            width={200}
+            height={200}
+            alt="photo"
+          />
+          <h1 className="text-2xl font-bold ">Mayank Meena</h1>
+          <p className="text-xl font-bold">Freelancer</p>
+          <Link
+            className="text-xl font-bold text-red-600 hover:text-red-400"
+            href="https://www.fiverr.com/mayankmeena"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            hire me!
+          </Link>
+          <Links />
+        </div>
       </div>
     </div>
   );

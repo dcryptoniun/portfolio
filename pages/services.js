@@ -1,4 +1,3 @@
-import Head from "next/head";
 import Image from "next/image";
 
 const services = [
@@ -25,17 +24,16 @@ const services = [
 
 export default function Services() {
   return (
-    <div className="m-3 p-2 md:h-screen flex justify-center items-center">
-      <Head>
-        <title>Services | Mayank Meena</title>
-      </Head>
-      <div className="container mx-auto py-8">
-        <h1 className="text-4xl font-bold  mb-6 text-primary">SERVICES</h1>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 ">
+    <div className="relative flex items-center justify-center p-2 m-3 md:h-screen">
+      <div className="absolute right-0 rounded-full bg-purple-800/30 w-52 h-52 blur-md animate-pulse"></div>
+      <div className="absolute bottom-0 rounded-full bg-yellow-300/30 w-52 h-52 blur-md"></div>
+      <div className="container py-8 mx-auto ">
+        <h1 className="mb-6 text-4xl font-bold text-primary">SERVICES</h1>
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
           {services.map((service) => (
             <div
               key={service.title}
-              className="bg-transparent backdrop-blur shadow-xl rounded-lg overflow-hidden"
+              className="overflow-hidden bg-transparent border border-opacity-50 rounded-lg shadow-xl hover:outline hover:transition-transform hover:scale-105 backdrop-blur"
             >
               <div className="relative h-48">
                 <Image
@@ -46,7 +44,7 @@ export default function Services() {
                 />
               </div>
               <div className="p-4">
-                <h2 className="text-xl font-bold  mb-2">{service.title}</h2>
+                <h2 className="mb-2 text-xl font-bold">{service.title}</h2>
                 <p className="">{service.description}</p>
               </div>
             </div>

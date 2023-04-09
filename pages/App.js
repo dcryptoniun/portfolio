@@ -9,7 +9,7 @@ import Contact from "./contact.js";
 function App() {
   return (
     <>
-      <div className=" scroll-smooth duration-500  w-full inset-4  flex justify-center items-center flex-col">
+      <div className="flex flex-col items-center justify-center w-full duration-500  scroll-smooth inset-4">
         <section id="hero">
           <Hero />
         </section>

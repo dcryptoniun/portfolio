@@ -44,11 +44,11 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center min-h-screen">
+    <div className="flex flex-col items-center justify-center min-h-screen ">
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="max-w-lg flex flex-col"
+        className="flex flex-col w-full max-w-lg p-16 shadow-xl" 
       >
         <label className="py-1 my-1">Name</label>
 
@@ -56,7 +56,7 @@ const ContactUs = () => {
           type="text"
           name="user_name"
           placeholder="Name"
-          className="form-input text-yellow-300 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:border-transparent shadow-xl"
+          className="px-4 py-2 border border-gray-300 rounded-md shadow-xl hover:scale-105 hover:text-yellow-300 form-input focus:outline-none focus:ring-2 focus:scale-105 focus:ring-emerald-300 focus:border-transparent"
         />
 
         <label className="py-1 my-1">Email</label>
@@ -64,7 +64,7 @@ const ContactUs = () => {
           type="email"
           name="email"
           placeholder="example@gmail.com"
-          className="form-input text-yellow-300 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:border-transparent shadow-xl"
+          className="px-4 py-2 text-yellow-300 border border-gray-300 rounded-md shadow-xl hover:scale-105 form-input focus:outline-none focus:ring-2 focus:scale-105 focus:ring-emerald-300 focus:border-transparent"
         />
 
         <label className="py-1 my-1">Message</label>
@@ -72,13 +72,13 @@ const ContactUs = () => {
         <textarea
           name="message"
           placeholder="Enter Message"
-          className="form-textarea text-yellow-300 border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:border-transparent "
+          className="px-4 py-2 text-yellow-300 border border-gray-300 rounded-md form-textarea hover:scale-105 focus:scale-105 focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:border-transparent "
         />
         <br />
         <input
           type="submit"
           value={isSending ? "Sending..." : "Send"}
-          className="font-bold uppercase bg-transperent py-2 px-4 w-full text-primary hover:bg-secondary/10 hover:text-accent outline rounded transition-all duration-150 active:bg-primary shadow-xl"
+          className="w-full px-4 py-2 font-bold uppercase transition-all duration-150 rounded shadow-xl bg-transperent text-primary hover:bg-secondary/10 hover:text-accent outline active:bg-primary"
           disabled={isSending}
         />
       </form>
