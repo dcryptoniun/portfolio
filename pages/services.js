@@ -6,20 +6,20 @@ const services = [
     title: "Website Development",
     description:
       "We design and develop beautiful, responsive websites using the latest web technologies.",
-    image: "/images/1.jpg",
+    image: "/Images/1.jpg",
   },
   {
     title: "Smart Contract (NFT, Token)",
     description:
       "We develop smart contracts for NFTs and tokens on Ethereum and other blockchain platforms.",
-    image: "/images/2.jpg",
+    image: "/Images/2.jpg",
   },
 
   {
     title: "Dapps",
     description:
       "We build decentralized applications (dapps) on blockchain platforms like Ethereum and EOS.",
-    image: "/images/3.jpg",
+    image: "/Images/3.jpg",
   },
 ];
 
