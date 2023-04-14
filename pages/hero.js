@@ -3,11 +3,11 @@ import { TextLoop } from "react-text-loop-next";
 
 const HeroSection = () => {
   return (
-    <div className=" duration-1000 ">
-      <div className="flex items-center justify-center  min-h-screen ">
-        <div className="m-3 p-2">
+    <div className="duration-1000 ">
+      <div className="flex items-center justify-center min-h-screen m-5 bg-gradient-to-tr rounded-2xl bg-opacity-5 from-fuchsia-800 to-indigo-600">
+        <div className="p-2 m-3">
           <h1 className="text-5xl font-bold">Mayank Meena</h1>
-          <h2 className="text-lg gap-1 font-semibold p-1">
+          <h2 className="gap-1 p-1 text-lg font-semibold">
             <TextLoop springConfig={{ stiffness: 180, damping: 8 }}>
               <span>Blockchain</span>
               <span>Smart Contract</span>
@@ -39,7 +39,7 @@ const HeroSection = () => {
             developer to help bring your ideas to life, look no further. Contact
             me today to learn more about how I can help you achieve your goals.
           </p>
-          <Link href="/#contact" className="btn btn-primary space-x-1">
+          <Link href="/#contact" className="space-x-1 btn btn-primary">
             <h1>Contact me</h1> <p className=" animate-pulse"> {">>"}</p>
           </Link>
         </div>

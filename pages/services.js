@@ -17,19 +17,19 @@ const services = [
   {
     title: "Dapps",
     description:
-      "We build decentralized applications (dapps) on blockchain platforms like Ethereum and EOS.",
+      "We build decentralized applications (dapps) on blockchain platforms like Ethereum and other EVM supported blockchain",
     image: "/Images/3.jpg",
   },
 ];
 
 export default function Services() {
   return (
-    <div className="relative flex items-center justify-center p-2 m-3 md:h-screen">
+    <div className="flex items-center justify-center min-h-screen p-5 pt-16 m-5 mt-16 ">
       <div className="absolute right-0 rounded-full bg-purple-800/30 w-52 h-52 blur-md animate-pulse"></div>
       <div className="absolute bottom-0 rounded-full bg-yellow-300/30 w-52 h-52 blur-md"></div>
       <div className="container py-8 mx-auto ">
         <h1 className="mb-6 text-4xl font-bold text-primary">SERVICES</h1>
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 ">
+        <div className="grid grid-cols-2 gap-6 md:grid-cols-3 ">
           {services.map((service) => (
             <div
               key={service.title}

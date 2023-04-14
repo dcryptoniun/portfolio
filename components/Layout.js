@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   return (
     <div className="font-mono">
       <Navbar />
-      <div className="flex flex-col items-center justify-center w-full rounded-b-3xl md:flex-row bg-gradient-to-tr from-fuchsia-800 to-indigo-600">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen gap-2 pt-10 rounded-b-3xl lg:flex-row bg-gradient-to-tr from-fuchsia-800 to-indigo-600">
         <ToastContainer
           className="font-mono font-bold "
           position="top-right"
@@ -22,10 +22,10 @@ export default function Layout({ children }) {
           pauseOnHover
           theme="dark"
         />
-        <div className="w-full h-screen md:w-1/3">
+        <div className="z-10 w-full h-screen lg:w-1/3">
           <Sidebar />
         </div>
-        <div className="h-screen md:w-2/3">{children}</div>
+        <div className="h-screen gap-2 lg:w-2/3">{children}</div>
       </div>
     </div>
   );

@@ -2,8 +2,6 @@ import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import { toast } from "react-toastify";
 
-
-
 const ContactUs = () => {
   const form = useRef();
   const [isSending, setIsSending] = useState(false);
@@ -44,11 +42,12 @@ const ContactUs = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen ">
+    <div className="flex flex-col items-center justify-center h-screen ">
+      <h1 className="pb-0 mb-0 text-3xl font-bold">Contact Me</h1>
       <form
         ref={form}
         onSubmit={sendEmail}
-        className="flex flex-col w-full max-w-lg p-16 shadow-xl" 
+        className="flex flex-col w-screen max-w-lg p-16 shadow-xl"
       >
         <label className="py-1 my-1">Name</label>
 

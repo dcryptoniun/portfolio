@@ -5,7 +5,7 @@ import Links from "./Links";
 
 function Sidebar() {
   return (
-    <div className="flex items-center justify-center h-screen pt-24 m-2 md:fixed md:justify-start md:pt-0 md:w-fit">
+    <div className="flex items-center justify-center h-screen pt-24 m-2 lg:fixed lg:justify-start md:pt-0 lg:w-fit">
       <div>
         <div className="relative p-16 space-y-2 text-center border-t-2 border-b-4 shadow-2xl border-primary rounded-xl backdrop-blur overflow-clip hover:scale-105">
           <div className="absolute rounded-full animate-pulse bg-secondary/10 w-52 h-52 -top-32 -right-32 blur-md "></div>

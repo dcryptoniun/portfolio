@@ -6,13 +6,13 @@ import ThemeSwitch from "./ThemeSwitch";
 
 function Navbar() {
   return (
-    <div className="navbar fixed z-20 bg-transperent backdrop-blur shadow border-b text-lg">
+    <div className="fixed z-20 text-lg border-b shadow navbar bg-transperent backdrop-blur">
       <div className="navbar-start">
         <div className="dropdown">
           <label tabIndex={0} className="btn btn-ghost md:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="w-5 h-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor"
@@ -27,7 +27,7 @@ function Navbar() {
           </label>
           <ul
             tabIndex={0}
-            className="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            className="p-2 mt-3 shadow menu menu-compact dropdown-content bg-base-100 rounded-box w-52"
           >
             <li>
               <Link className=" hover:text-accent" href="/">
@@ -37,6 +37,11 @@ function Navbar() {
             <li><Link className=" hover:text-accent" href="/#services">
             Services
           </Link></li>
+          <li>
+              <Link className=" hover:text-accent" href="/#skills">
+                Skills
+              </Link>
+            </li>
             <li>
               <Link className=" hover:text-accent" href="/#contact">
                 Contact
@@ -59,8 +64,8 @@ function Navbar() {
           <Image src="/Images/mlogo.png" alt="Logo" width={25} height={25} />
         </Link>
       </div>
-      <div className="navbar-center hidden md:flex">
-        <ul className="menu menu-horizontal px-1">
+      <div className="hidden navbar-center md:flex">
+        <ul className="px-1 menu menu-horizontal">
           <li>
             <Link className=" hover:text-accent" href="/">
               Home
@@ -69,6 +74,11 @@ function Navbar() {
           <li><Link className=" hover:text-accent" href="/#services">
             Services
           </Link></li>
+          <li>
+              <Link className=" hover:text-accent" href="/#skills">
+                Skills
+              </Link>
+            </li>
           <li>
             <Link className=" hover:text-accent" href="/#contact">
               Contact
@@ -86,7 +96,7 @@ function Navbar() {
       </li> */}
         </ul>
       </div>
-      <div className="navbar-end gap-2 pr-2">
+      <div className="gap-2 pr-2 navbar-end">
         <Links />
         <div>
           <ThemeSwitch />

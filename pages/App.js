@@ -9,7 +9,7 @@ import Contact from "./contact.js";
 function App() {
   return (
     <>
-      <div className="flex flex-col items-center justify-center w-full duration-500  scroll-smooth inset-4">
+      <div className="grid w-full grid-cols-1 gap-5 duration-500 scroll-smooth inset-4">
         <section id="hero">
           <Hero />
         </section>
@@ -19,9 +19,9 @@ function App() {
         <section id="services">
           <Services />
         </section>
-        {/* <section id="skills">
+        <section id="skills">
           <Skills />
-        </section> */}
+        </section>
         {/* <section id="projects">
           <Projects />
         </section> */}
