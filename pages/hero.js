@@ -4,7 +4,7 @@ import { TextLoop } from "react-text-loop-next";
 const HeroSection = () => {
   return (
     <div className="duration-1000 ">
-      <div className="flex items-center justify-center min-h-screen m-5 bg-gradient-to-tr rounded-2xl bg-opacity-5 from-fuchsia-800 to-indigo-600">
+      <div className="flex items-center justify-center min-h-screen m-5 rounded-2xl bg-opacity-5">
         <div className="p-2 m-3">
           <h1 className="text-5xl font-bold">Mayank Meena</h1>
           <h2 className="gap-1 p-1 text-lg font-semibold">

@@ -34,10 +34,12 @@ function Navbar() {
                 Home
               </Link>
             </li>
-            <li><Link className=" hover:text-accent" href="/#services">
-            Services
-          </Link></li>
-          <li>
+            <li>
+              <Link className=" hover:text-accent" href="/#services">
+                Services
+              </Link>
+            </li>
+            <li>
               <Link className=" hover:text-accent" href="/#skills">
                 Skills
               </Link>
@@ -45,6 +47,11 @@ function Navbar() {
             <li>
               <Link className=" hover:text-accent" href="/#contact">
                 Contact
+              </Link>
+            </li>
+            <li>
+              <Link className=" hover:text-accent" href="/#projects">
+                Projects
               </Link>
             </li>
             {/*  --with submenu--
@@ -71,17 +78,24 @@ function Navbar() {
               Home
             </Link>
           </li>
-          <li><Link className=" hover:text-accent" href="/#services">
-            Services
-          </Link></li>
           <li>
-              <Link className=" hover:text-accent" href="/#skills">
-                Skills
-              </Link>
-            </li>
+            <Link className=" hover:text-accent" href="/#services">
+              Services
+            </Link>
+          </li>
+          <li>
+            <Link className=" hover:text-accent" href="/#skills">
+              Skills
+            </Link>
+          </li>
           <li>
             <Link className=" hover:text-accent" href="/#contact">
               Contact
+            </Link>
+          </li>
+          <li>
+            <Link className=" hover:text-accent" href="/#projects">
+              Projects
             </Link>
           </li>
           {/* <li tabIndex={0}>

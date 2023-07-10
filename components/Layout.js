@@ -8,7 +8,7 @@ export default function Layout({ children }) {
   return (
     <div className="font-mono">
       <Navbar />
-      <div className="flex flex-col items-center justify-center w-full min-h-screen gap-2 pt-10 rounded-b-3xl lg:flex-row bg-gradient-to-tr from-fuchsia-800 to-indigo-600">
+      <div className="flex flex-col items-center justify-center w-full min-h-screen gap-2 pt-10 rounded-b-3xl lg:flex-row">
         <ToastContainer
           className="font-mono font-bold "
           position="top-right"

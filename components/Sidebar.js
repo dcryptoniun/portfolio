@@ -18,15 +18,25 @@ function Sidebar() {
             alt="photo"
           />
           <h1 className="text-2xl font-bold ">Mayank Meena</h1>
-          <p className="text-xl font-bold">Freelancer</p>
-          <Link
-            className="text-xl font-bold text-red-600 hover:text-red-400"
-            href="https://www.fiverr.com/mayankmeena"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            hire me!
-          </Link>
+          <p className="text-xl font-bold">developer</p>
+          <div className="grid">
+            <Link
+              className="text-xl font-bold text-red-600 hover:text-red-400"
+              href="https://www.fiverr.com/mayankmeena"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              hire me!
+            </Link>
+            <Link
+              className="text-xl font-bold text-red-600 hover:text-red-400"
+              href="/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Resume
+            </Link>
+          </div>
           <Links />
         </div>
       </div>
